@@ -60,6 +60,7 @@ const Footer = () => {
         </p> */}
 
         <p class='footer-company-name'>𝓦𝓸𝓻𝓵𝓭 𝓑𝓻𝓪𝓷𝓭𝓼 © 2023</p>
+         <h4 style={{color: 'white', paddingTop: '20px'}}>Follow us on social</h4>
 
         <div class='footer-icons'>
           <a href='https://www.facebook.com'>
