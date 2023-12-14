@@ -331,7 +331,7 @@ h2 {
     margin-bottom: 50px;
     gap: 30px;
   }
-  .productHeader {
+  .productHeader .categories{
     display: none;
   }
 }
