@@ -334,6 +334,9 @@ h2 {
   .productHeader .categories{
     display: none;
   }
+  .productHeader .latestHeading{
+    display: none;
+  }
 }
 
 .multiImgContainer {
