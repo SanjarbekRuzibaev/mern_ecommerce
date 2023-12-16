@@ -107,6 +107,41 @@ const ProductScreen = () => {
                   fluid
                 />
               )}
+
+{product.images && product.images.length > 0 && (
+                <div className='multiImgContainer'>
+                  <Image
+                    onClick={() => setActiveImg(product.images[0])}
+                    className='multiImg'
+                    src={product.images[0]}
+                    alt={product.name}
+                    fluid
+                  />
+                  {
+                    product.images[1] && <>
+                     <Image
+                    onClick={() => setActiveImg(product.images[1])}
+                    className='multiImg'
+                    src={product.images[1]}
+                    alt={product.name}
+                    fluid
+                    />
+                    </>
+                  }
+                  {
+                    product.images[2] && <>
+                     <Image
+                    onClick={() => setActiveImg(product.images[2])}
+                    className='multiImg'
+                    src={product.images[2]}
+                    alt={product.name}
+                    fluid
+                    />
+                    </>
+                  }
+                 
+                </div>
+              )}
             </Col>
             <Col md={3}>
               <ListGroup variant='flush'>
@@ -198,40 +233,7 @@ const ProductScreen = () => {
           </Row>
           <Row>
             <Col md={6}>
-              {product.images && product.images.length > 0 && (
-                <div className='multiImgContainer'>
-                  <Image
-                    onClick={() => setActiveImg(product.images[0])}
-                    className='multiImg'
-                    src={product.images[0]}
-                    alt={product.name}
-                    fluid
-                  />
-                  {
-                    product.images[1] && <>
-                     <Image
-                    onClick={() => setActiveImg(product.images[1])}
-                    className='multiImg'
-                    src={product.images[1]}
-                    alt={product.name}
-                    fluid
-                    />
-                    </>
-                  }
-                  {
-                    product.images[2] && <>
-                     <Image
-                    onClick={() => setActiveImg(product.images[2])}
-                    className='multiImg'
-                    src={product.images[2]}
-                    alt={product.name}
-                    fluid
-                    />
-                    </>
-                  }
-                 
-                </div>
-              )}
+             
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant='flush'>
@@ -297,6 +299,7 @@ const ProductScreen = () => {
               </ListGroup>
             </Col>
           </Row>
+          
         </>
       )}
     </>
