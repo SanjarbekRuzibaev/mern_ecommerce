@@ -11,7 +11,7 @@ const Season = () => {
         <div className='seasonHeader'>
           <h1 className='seasonHeading'>Spooky season is coming soon...</h1>
           <p>
-            Well, kind of. World Brands monsters know how early we do Halloween
+            Well, kind of. 'World Brands' monsters know how early we do Halloween
             round here, so this’ll come as no surprise to the OGs. Get your
             claws on Halloween bits at trick-or-treat prices before the big day
             creeps up on us. (Psst! More coming soon...)
