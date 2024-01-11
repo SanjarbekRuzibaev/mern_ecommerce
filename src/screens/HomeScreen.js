@@ -56,7 +56,7 @@ const HomeScreen = () => {
   useEffect(() => {
     setFilteredProducts(
       category === "all"
-        ? products
+        ? products.reverse()
         : products.filter(
             (product) =>
               product.category.toLowerCase() === category.toLocaleLowerCase(),
