@@ -82,7 +82,7 @@ const CategoryListScreen = () => {
     <>
       <Row className='align-items-center'>
         <Col>
-          <h1>Catoegories</h1>
+          <h1>Categories</h1>
         </Col>
         <Col>
           <Button className='my-3 float-end' onClick={() => navigate("/admin/product")}>
