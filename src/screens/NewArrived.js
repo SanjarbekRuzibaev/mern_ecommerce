@@ -74,7 +74,7 @@ const NewArrived = () => {
     <>
       <Meta />
       <div className='productHeader'>
-        <h1 className='latestHeading'>New Arrivals</h1>
+        <h1 className='latestHeading'></h1>
         <div
           className={`categories ${category === "all" ? "activeCat" : ""}`}
           onClick={() => {
