@@ -94,7 +94,7 @@ const HomeScreen = () => {
       )}
       <Season />
       <div className='productHeader'>
-        <h1 className='latestHeading'>Latest Products</h1>
+        <h1 className='latestHeading'></h1>
         <div
           className={`categories ${category === "all" ? "activeCat" : ""}`}
           onClick={() => {
